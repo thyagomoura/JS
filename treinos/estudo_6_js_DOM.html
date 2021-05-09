@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Estudando DOM</title>
+        <style>
+            body {
+                background:#757575;
+                color: burlywood;
+                font: normal 20pt Arial;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!--Comentarios em HTML-->
+        
+        <h1>Estudo em DOM!</h1>
+        <p>Estudo de DOM em ação</p>
+        <p>Aprendendo <strong>DOM</strong> em JAVASCRIPT</p>
+        <div id="msg">Clique em mim</div>
+
+        <script>
+            /*Arvore DOM:
+            parents e child
+             window:
+              location document history
+                        html
+                    head    body
+                        <tags>           
+            */
+
+            //navegação pela arvores DOM
+            window.document.write("fala guys")
+
+            //seleçao por marca
+            //getElementsByTagName()[]
+            //var p1 = window.document.getElementsByTagName('p')[0]
+            //window.document.write(p1.innerText)
+            //p1.style.color = 'pink'
+            
+            //selaçao por id
+            //getElementById()
+            //var d = window.document.getElementById('msg')
+            //d.style.background = 'black'
+            //d.innerText = 'Aguardando...'
+
+            //selaçao por nome
+            //getElementsByName()[]
+            //var nome = window.document.getElementsByName('msg')[0]
+            //nome.style.color = 'pink'
+
+
+            //selaçao por classe
+            //getElementsByClassName()[]
+            //window.document.getElementsByClassName()[0]
+
+            //seleçao por seletor
+            //querySelector()
+            //querySelectorAll()
+            var d = window.document.querySelector('div#msg')
+            d.style.color = 'blue'
+            
+        </script>
+    </body>
+
+</html>

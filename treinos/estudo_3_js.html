@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Meu primeiro programa em JAVASCRIPT</title>
+        <style>
+            /*CSS*/
+            body  {
+                background-color: #616161;
+                color: blanchedalmond;
+                font: normal 20pt arial;
+            }  
+        </style>
+    </head>
+
+    <body>
+        <!--Comentarios em HTML-->
+        <h1>Terceiro estudo em JS!</h1>
+
+        <script>
+            /*o prompt retorna uma string e nao numeros
+            Number.parseInt(n) para transformar em inteiro
+            Number.parseFloat(n) para transformar em um numero real
+            Number(n) para number qq
+            usa-se: `${}` para inserir a variavel em meio a frase printada 
+            string(n) ou n.toString(n)transformar em string
+            s.length ver quantos caracteres tem na string
+            s.toUpperCase() colocar em maiusculas
+            s.toLowerCase() colocar em minusculas
+            */
+
+            var num1 = Number.parseInt(window.prompt("Digite um numero: "));//receber o nome do usuario e armazenar em uma variavel
+            var num2 = Number.parseInt(window.prompt("Digite outro numero: "));//receber o nome do usuario e armazenar em uma variavel
+            var soma = num1 + num2;
+
+            //pode ser adiçao e concatenação
+            window.alert("A soma dos numeros é: " + soma);
+            window.alert(`A soma do numero ${num1} com ${num2} é igual a ${soma}`);
+
+            //estudando formatação de strings:
+            var nome1 = window.prompt("Digite o nome: ");
+            window.alert("O nome é: " + nome1 + "");
+            var nome2 =  window.prompt("Digite o segundo nome: ");
+            window.alert("O nome é: " + nome2 + "");
+            var nome3 =  window.prompt("Digite o terceiro nome: ");
+            window.alert("O nome é: " + nome3 + "");
+            window.alert(`O ${nome1} é o primeiro, o ${nome2} é o segundo e o ${nome3} e o terceiro!`)
+
+
+        </script>
+    </body>
+
+</html>
